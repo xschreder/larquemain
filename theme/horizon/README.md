@@ -8,6 +8,7 @@ Fichiers de configuration appliqués le 6 novembre 2026 sur la copie non publié
 | `sections/header-group.json` | `sections-header-group.json` | en-tête sans barre d'annonce, logo à gauche, menu centré, sans sélecteurs pays et langue |
 | `templates/index.json` | `templates-index.json` | héros vidéo (sac BLOOM) plein écran sans texte, puis grille de la collection « Collection » en 4 colonnes |
 | `templates/collection.json` | `templates-collection.json` | titre discret, filtres horizontaux sans tri, grille 4 colonnes, images au format portrait |
+| `templates/product.json` | `templates-product.json` | titre en majuscules, accordéon « La marque » sous la description (Pourquoi la marque, Le design, La toile de pomme, Savoir-faire et engagements, Entretien et studio : contenu de la page Questions de Squarespace), section « Le savoir-faire » avec la photo de l'atelier, recommandations « Vous aimerez aussi » |
 
 Le menu principal Shopify pointe vers Collection, Sacs, Accessoires et Contact.
 
