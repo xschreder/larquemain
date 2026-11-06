@@ -77,6 +77,10 @@ Détails des commandes préparées :
 - Commande 3 : le produit « MINI IMPERFECTO - Rouge » n'existe plus au catalogue ; la ligne est importée comme ligne libre (sans lien produit).
 - Les commandes sont rattachées aux fiches clients par e-mail.
 
+### Presse (fait)
+
+La page Presse de Squarespace (galerie de 41 visuels avec légendes) est reprise sous forme de blog Shopify « Presse » (handle `presse`, commentaires fermés), avec 17 articles publiés, un par parution, auteur « Guillaume Larquemain », image à la une et légendes reprises des textes alternatifs Squarespace, tag `Presse` plus le nom du titre : Sophie Fontanel ; Diane Pernet – ASVOF ; ONIRIQ ; WWD – Vegan Fashion Week ; Harper's Bazaar ; ELLE Lithuania ; L'Officiel Brasil ; Contributor Magazine ; InStyle Greece ; Schön! Magazine ; New York Fashion Week ; Vogue China ; NYLON – Marguerite ; Grammy Awards – Maggie Baird ; Pomme en concert (veste BUDDY) ; Konbini × Apple Music « Pomme est dans Numbers » ; Les Inrockuptibles 40 ans (sac LEEF). Les images pointent vers les fichiers déjà importés dans Shopify → Contenu → Fichiers. Squarespace ne datant pas ces parutions, les articles portent la date d'import : à ajuster dans l'admin si besoin. La vidéo de la page presse (`Presse-NCZF3401.mp4`) est dans les fichiers Shopify mais n'est pas placée dans un article.
+
 ### Redirections (fait)
 
 Les 25 URL du plan de site Squarespace (`sitemap.xml`) sont redirigées dans Shopify (Boutique en ligne → Navigation → Redirections d'URL). Le fichier `redirects.csv` est au format d'import Shopify (colonnes `Redirect from,Redirect to`) et sert de sauvegarde ou de réimport.
@@ -89,11 +93,12 @@ Les 25 URL du plan de site Squarespace (`sitemap.xml`) sont redirigées dans Sho
 | `/collection/accessoires`, `/collection/accessoires/earrings` | `/collections/accessoires` (collection automatique, types « Accessoire » et « Petite maroquinerie ») |
 | `/collection/accessoires/chapeaux`, `/collection/seed` | fiche produit correspondante |
 | `/home-1` | `/` |
-| `/portrait`, `/presse`, `/vosquestions` | `/pages/portrait`, `/pages/presse`, `/pages/faq` |
+| `/portrait`, `/vosquestions` | `/pages/portrait`, `/pages/faq` |
+| `/presse` | `/blogs/presse` (blog « Presse ») |
 | `/shipping-returns` | `/policies/shipping-policy` |
 
 À faire pour que ces redirections aboutissent :
-- Créer les pages Shopify `portrait`, `presse` et `faq` (handles exacts) avec le contenu des pages Squarespace, et renseigner la politique de livraison dans Paramètres → Politiques.
+- Créer les pages Shopify `portrait` et `faq` (handles exacts) avec le contenu des pages Squarespace, et renseigner la politique de livraison dans Paramètres → Politiques.
 - Les redirections ne s'activent que sur le domaine final : pointer `guillaumelarquemain.com` vers Shopify au moment de la bascule.
 - Les chemins Squarespace se terminant par un tiret (porte-cartes, porte-passeport) sont repris tels quels ; Shopify ignore la casse et la barre oblique finale.
 

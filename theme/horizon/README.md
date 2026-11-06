@@ -6,10 +6,12 @@ Fichiers de configuration appliqués le 6 novembre 2026 sur la copie non publié
 |---|---|---|
 | `config/settings_data.json` | `config-settings_data.json` | logo, largeur de page « wide », Helvetica partout, coins carrés, aucun effet au survol, palette noir et blanc |
 | `sections/header-group.json` | `sections-header-group.json` | en-tête sans barre d'annonce, logo à gauche, menu centré, sans sélecteurs pays et langue |
-| `templates/index.json` | `templates-index.json` | héros vidéo (sac BLOOM) plein écran sans texte, puis grille de la collection « Collection » en 4 colonnes |
+| `templates/index.json` | `templates-index.json` | héros vidéo (sac BLOOM) plein écran sans texte, grille de la collection « Collection » en 4 colonnes, puis les sections reprises de l'accueil Squarespace : logos « Guillaume Larquemain : dans la Presse internationale. » (2 rangées de 5), « Rendez-vous au Studio ! », et les 4 derniers articles du blog « Presse » |
 | `templates/collection.json` | `templates-collection.json` | titre discret, filtres horizontaux sans tri, grille 4 colonnes, images au format portrait |
 | `templates/product.json` | `templates-product.json` | titre en majuscules, accordéon « La marque » sous la description (Pourquoi la marque, Le design, La toile de pomme, Savoir-faire et engagements, Entretien et studio : contenu de la page Questions de Squarespace), section « Le savoir-faire » avec la photo de l'atelier, recommandations « Vous aimerez aussi » |
 
 Le menu principal Shopify pointe vers Collection, Sacs, Accessoires et Contact.
+
+Le thème « Horizon - Larquemain » ayant été publié, les sections presse de l'accueil ont été appliquées sur une copie non publiée « Horizon - Larquemain (home presse) » : la vérifier dans l'éditeur puis la publier (ou coller `templates-index.json` dans le thème publié).
 
 Pour réappliquer un fichier : Boutique en ligne → Thèmes → Copie de Horizon → Modifier le code, puis coller le contenu dans le fichier correspondant. Pour publier : bouton « Publier » sur la copie une fois validée dans l'éditeur.
