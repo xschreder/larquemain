@@ -1,0 +1,4 @@
+# Données personnelles issues de la migration : jamais versionnées
+migration/data/
+migration/*.json
+*.env
