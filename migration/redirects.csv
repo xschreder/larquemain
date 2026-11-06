@@ -1,0 +1,26 @@
+Redirect from,Redirect to
+/collection/p/seed,/products/seed
+/collection/p/leef,/products/leef
+/collection/p/bloom,/products/bloom
+/collection/p/root,/products/root
+/collection/p/big-apple-bag,/products/big-apple-bag
+/collection/p/veste-buddy,/products/veste-buddy
+/collection/p/casquette,/products/casquette
+/collection/p/carre-soie-noir,/products/carre-soie-noir
+/collection/p/carre-de-soie-rouge,/products/carre-de-soie-rouge
+/collection/p/bandeau-en-soie-1,/products/bandeau-en-soie-noire
+/collection/p/bandeau-en-soie-rouge,/products/bandeau-en-soie-rouge
+/collection/p/porte-cartes-en-collaboration-avec-le-parapluie-de-cherbourg-,/products/porte-cartes
+/collection/p/porte-passeport-avec-le-parapluie-de-cherbourg-,/products/porte-passeport
+/collection/p/carnet-a6,/products/carnet-a6
+/collection,/collections/collection
+/collection/bags,/collections/sacs
+/collection/seed,/products/seed
+/collection/accessoires,/collections/accessoires
+/collection/accessoires/chapeaux,/products/casquette
+/collection/accessoires/earrings,/collections/accessoires
+/home-1,/
+/portrait,/pages/portrait
+/presse,/pages/presse
+/vosquestions,/pages/faq
+/shipping-returns,/policies/shipping-policy

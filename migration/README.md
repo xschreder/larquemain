@@ -77,14 +77,34 @@ Détails des commandes préparées :
 - Commande 3 : le produit « MINI IMPERFECTO - Rouge » n'existe plus au catalogue ; la ligne est importée comme ligne libre (sans lien produit).
 - Les commandes sont rattachées aux fiches clients par e-mail.
 
+### Redirections (fait)
+
+Les 25 URL du plan de site Squarespace (`sitemap.xml`) sont redirigées dans Shopify (Boutique en ligne → Navigation → Redirections d'URL). Le fichier `redirects.csv` est au format d'import Shopify (colonnes `Redirect from,Redirect to`) et sert de sauvegarde ou de réimport.
+
+| Ancienne URL Squarespace | Cible Shopify |
+|---|---|
+| `/collection/p/<produit>` (14 fiches) | `/products/<handle>` |
+| `/collection` | `/collections/collection` |
+| `/collection/bags` | `/collections/sacs` (collection automatique, type « Sac ») |
+| `/collection/accessoires`, `/collection/accessoires/earrings` | `/collections/accessoires` (collection automatique, types « Accessoire » et « Petite maroquinerie ») |
+| `/collection/accessoires/chapeaux`, `/collection/seed` | fiche produit correspondante |
+| `/home-1` | `/` |
+| `/portrait`, `/presse`, `/vosquestions` | `/pages/portrait`, `/pages/presse`, `/pages/faq` |
+| `/shipping-returns` | `/policies/shipping-policy` |
+
+À faire pour que ces redirections aboutissent :
+- Créer les pages Shopify `portrait`, `presse` et `faq` (handles exacts) avec le contenu des pages Squarespace, et renseigner la politique de livraison dans Paramètres → Politiques.
+- Les redirections ne s'activent que sur le domaine final : pointer `guillaumelarquemain.com` vers Shopify au moment de la bascule.
+- Les chemins Squarespace se terminant par un tiret (porte-cartes, porte-passeport) sont repris tels quels ; Shopify ignore la casse et la barre oblique finale.
+
 ## Fichiers
 
 - `import_orders.py` : script d'import des commandes (Python 3, sans dépendance).
+- `redirects.csv` : les 25 redirections au format d'import Shopify.
 - `orders_shopify.json` (hors dépôt) : les 8 commandes au format `OrderCreateOrderInput`.
 
 ## Après la migration
 
 - Supprimer les clients `tag:a-verifier` après contrôle.
-- Vérifier la collection « Home page » (créée par Shopify) et la navigation du thème.
-- Configurer livraison, taxes, moyens de paiement et domaine sur Shopify avant de couper Squarespace.
-- Mettre en place les redirections depuis les anciennes URL Squarespace.
+- Vérifier la collection « Home page » (créée par Shopify) et construire la navigation du thème avec les collections Collection, Sacs et Accessoires.
+- Créer les pages portrait, presse et faq, puis configurer livraison, taxes, moyens de paiement et domaine sur Shopify avant de couper Squarespace.
