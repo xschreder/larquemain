@@ -49,6 +49,8 @@ Inventaire des visuels hors fiches produits (les 100 images produits sont déjà
 
 Le kit complet (logo, médias, vidéos) a été fourni en archive `larquemain-brand-kit.zip` à part du dépôt.
 
+Tout est aussi importé dans Shopify → Contenu → Fichiers, prêt à être utilisé dans l'éditeur de thème : le logo (PNG natif), les 78 visuels de pages (JPEG et PNG d'origine, pleine résolution, texte alternatif repris du nom de fichier) et les 2 vidéos MP4. Les images produits restent sur leurs fiches respectives.
+
 ## Pages à recréer sur Shopify
 
 Contenu éditorial Squarespace à reporter dans les pages Shopify (handles attendus par les redirections) :
